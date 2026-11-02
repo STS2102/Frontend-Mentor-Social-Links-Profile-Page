@@ -98,6 +98,6 @@ main{
     border-radius: 0.5rem;
 }
 
-.Github:hover, .Frontend-Mentor:hover, .LinkedIn:hover, .Twitter:hover, .IG:hover{
+.Github:hover, .Frontend-Mentor:hover, .LinkedIn:hover, .Twitter:hover, .IG:hover, .Github:focus-visible, .Frontend-Mentor:focus-visible, .LinkedIn:focus-visible, .Twitter:focus-visible, .IG:focus-visible{
     background-color: var(--Location-txt);
 }
