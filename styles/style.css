@@ -1,0 +1,103 @@
+:root{
+    --html-bkg-color: hsl(0, 0%, 8%);
+    --card-bkg-color: hsl(0, 0%, 12%);
+    --button-color: hsl(0, 0%, 20%);
+    --Author-Description-txt: hsl(0, 0%, 100%);
+    --Location-txt: hsl(75, 94%, 57%);
+    --bold-weight: 700;
+    --med-bold-weight: 600;
+    --norm-weight: 400;
+    --font: "Inter", sans-serif;
+}
+
+/* Root text size is typically set to 16px. */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--html-bkg-color);
+    /* Add a reference height so that the centering works later in styling. */
+    height: 100vh;
+    margin: 0rem;
+}
+
+/* Setting main to be the Flexbox. Ths doubles as a landmark for screenreaders. */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-bkg-color);
+    box-sizing: border-box; /* Ensures the box-model, except margins, is included in the width/height values. */
+    width:100%;
+    max-width: 24rem;
+    gap: 1rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 10px;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+    
+}
+
+.Author-Img{
+    max-width: 100%;
+    object-fit: cover; /* Ensures the image aspect ratio stays the same, and is trimmed to fit container. */
+
+
+}
+
+.img-box{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    overflow: hidden; /* This makes sure to crop the image. Otherwise the cover setting just makes sure image is the correct size for rectangular container. */
+}
+
+.Author{
+    color: var(--Author-Description-txt);
+    font-weight: var(--bold-weight);
+    font-size: 1.5rem;
+    font-family: var(--font);
+    box-sizing: border-box;
+    margin: 0rem;
+    max-height: 1.5rem;
+}
+
+.Location{
+    color: var(--Location-txt);
+    font-weight: var(--med-bold-weight);
+    font-size: 0.875rem;
+    font-family: var(--font);
+    box-sizing: border-box;
+    margin: 0rem;
+    max-height: 0.875rem;
+}
+
+.Description{
+    color: var(--Author-Description-txt);
+    font-weight: var(--norm-weight);
+    font-size: 0.875rem;
+    font-family: var(--font);
+}
+
+.Github, .Frontend-Mentor, .LinkedIn, .Twitter, .IG{
+    display: flex;
+    flex-direction: row;
+    color: var(--Author-Description-txt);
+    background-color: var(--button-color);
+    font-weight: var(--med-bold-weight);
+    font-size: 0.875rem;
+    font-family: var(--font);
+    box-sizing: border-box;
+    margin: 0rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.875rem;
+    border-radius: 0.5rem;
+}
+
+.Github:hover, .Frontend-Mentor:hover, .LinkedIn:hover, .Twitter:hover, .IG:hover{
+    background-color: var(--Location-txt);
+}
